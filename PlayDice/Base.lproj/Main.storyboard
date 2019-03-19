@@ -62,10 +62,13 @@
                                 <color key="backgroundColor" red="0.15738492397639434" green="0.98328930139541626" blue="0.75223126249457728" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="4oR-W7-68G"/>
-                                    <constraint firstAttribute="width" constant="316" id="fac-ao-K0K"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="316" id="fac-ao-K0K"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
                                 <state key="normal" title="Ramdom Dice"/>
+                                <connections>
+                                    <action selector="ramdomDiceButtom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6xN-96-6GA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -89,6 +92,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="FirstDiceImageView" destination="ZTG-BP-wSC" id="ECO-vB-3n7"/>
+                        <outlet property="secondDiceImageView" destination="Nag-4w-NhU" id="kpR-Cr-HRb"/>
+                        <outlet property="thirdDiceImageView" destination="35Z-p7-2Nn" id="9pU-ii-RZa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
