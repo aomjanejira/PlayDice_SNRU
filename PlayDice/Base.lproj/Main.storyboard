@@ -46,15 +46,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice4" translatesAutoresizingMaskIntoConstraints="NO" id="Ogr-o7-5tq">
                                 <rect key="frame" x="49" y="381" width="100" height="100"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="IkH-B3-4VM"/>
                                     <constraint firstAttribute="height" constant="100" id="XE0-ec-uPt"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="lXd-YN-W7T"/>
                                     <constraint firstAttribute="width" constant="100" id="wF1-aS-X76"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice4" translatesAutoresizingMaskIntoConstraints="NO" id="35Z-p7-2Nn">
-                                <rect key="frame" x="265" y="381" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Tyx-wh-ltK"/>
-                                    <constraint firstAttribute="height" constant="100" id="jmQ-Wc-7qQ"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egl-aa-lA5">
@@ -70,6 +65,13 @@
                                     <action selector="ramdomDiceButtom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6xN-96-6GA"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice4" translatesAutoresizingMaskIntoConstraints="NO" id="35Z-p7-2Nn">
+                                <rect key="frame" x="265" y="381" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Tyx-wh-ltK"/>
+                                    <constraint firstAttribute="height" constant="100" id="jmQ-Wc-7qQ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -78,14 +80,15 @@
                             <constraint firstItem="35Z-p7-2Nn" firstAttribute="top" secondItem="kjA-cd-hVR" secondAttribute="bottom" constant="80" id="19f-6l-BI6"/>
                             <constraint firstItem="yIK-zd-Zw7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2IZ-vj-lNy"/>
                             <constraint firstItem="yIK-zd-Zw7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4Vy-mb-mdO"/>
+                            <constraint firstItem="Ogr-o7-5tq" firstAttribute="top" secondItem="kjA-cd-hVR" secondAttribute="bottom" constant="80" id="6uq-iM-d1a"/>
                             <constraint firstItem="7em-Q8-OLh" firstAttribute="top" secondItem="kjA-cd-hVR" secondAttribute="bottom" constant="80" id="BEN-x7-pLB"/>
                             <constraint firstItem="ehK-6w-sQK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="Kv6-8v-YUH"/>
                             <constraint firstItem="7em-Q8-OLh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nag-4w-NhU"/>
                             <constraint firstItem="kjA-cd-hVR" firstAttribute="top" secondItem="ehK-6w-sQK" secondAttribute="bottom" constant="8" id="PAw-rU-5VC"/>
-                            <constraint firstItem="Ogr-o7-5tq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-108" id="ZTG-BP-wSC"/>
                             <constraint firstItem="35Z-p7-2Nn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="108" id="cJp-bJ-j3z"/>
                             <constraint firstItem="yIK-zd-Zw7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fY9-Zz-9kE"/>
                             <constraint firstItem="Ogr-o7-5tq" firstAttribute="top" secondItem="kjA-cd-hVR" secondAttribute="bottom" constant="80" id="imF-Qx-3af"/>
+                            <constraint firstItem="Ogr-o7-5tq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-108" id="lf5-9p-KFN"/>
                             <constraint firstItem="ehK-6w-sQK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nBJ-em-0bp"/>
                             <constraint firstItem="kjA-cd-hVR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wGV-NW-wSA"/>
                             <constraint firstItem="yIK-zd-Zw7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yez-3b-5dy"/>
@@ -93,8 +96,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="FirstDiceImageView" destination="ZTG-BP-wSC" id="ECO-vB-3n7"/>
-                        <outlet property="secondDiceImageView" destination="Nag-4w-NhU" id="kpR-Cr-HRb"/>
+                        <outlet property="firstDiceImageView" destination="Ogr-o7-5tq" id="NTu-wx-NYU"/>
+                        <outlet property="secondDiceImageView" destination="7em-Q8-OLh" id="iqm-nA-wbh"/>
                         <outlet property="thirdDiceImageView" destination="35Z-p7-2Nn" id="9pU-ii-RZa"/>
                     </connections>
                 </viewController>
